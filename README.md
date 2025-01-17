@@ -12,59 +12,53 @@
 
 **MENTOR NAME**: NEELA SANTHOSH
 
-Internship Task 1: Analyzing Flipkart Big Billion Days Product Sale Dataset Using PySpark on Google Colab
+Internship Task 1: Analyzing Flipkart Big Billion Days Product Sale Data Using PySpark on Databricks
 
-For my first internship task, I undertook an extensive analysis of the Flipkart Big Billion Days product sale dataset. The dataset, sourced from GitHub, offers a wealth of information about product categories, pricing, discounts, ratings, and other key metrics, making it a suitable choice to showcase the power of PySpark for analyzing large datasets. The primary objective of this task was to demonstrate the scalability and efficiency of PySpark for processing and deriving insights from big data.
+As part of my internship at Versa Controls, I undertook a data analysis task leveraging PySpark and Databricks to explore the Flipkart Big Billion Days product sale dataset, which I sourced from GitHub. This task aimed to showcase the scalability and efficiency of PySpark in handling large datasets while utilizing the collaborative and powerful capabilities of Databricks as a unified analytics platform.
+
+Objective
+The primary goal of this task was to analyze the Flipkart Big Billion Days sales data to extract meaningful insights about sales trends, product categories, pricing strategies, and customer preferences. By processing this large dataset using PySpark, I sought to demonstrate the framework's ability to handle data-intensive operations with scalability and speed. Databricks provided a seamless environment for development, collaboration, and visualization of results, making it an ideal choice for this analysis.
 
 Dataset Overview
+The dataset contains detailed information about products sold during Flipkart's Big Billion Days sale. It includes key attributes such as product names, categories, prices, discounts, ratings, and customer reviews. Additionally, there are timestamps capturing when the sales occurred, enabling temporal analysis of sales trends. The data's volume and diversity made it an excellent candidate for showcasing the power of distributed computing tools like PySpark.
 
-The Flipkart Big Billion Days dataset consists of diverse product categories and associated attributes like product names, categories, discounted prices, original prices, customer ratings, and reviews. These attributes provide an excellent opportunity to analyze customer buying behavior, product popularity, and the impact of discounts during one of the largest online sale events in India.
+Tools and Technologies
+1. PySpark: A Python API for Apache Spark, PySpark enabled me to perform distributed data processing, allowing me to process the large dataset efficiently. With its extensive library of functions, I conducted data cleaning, transformation, and analysis seamlessly.
 
-Environment and Tools Used
+2. Databricks: This cloud-based platform provided an integrated environment for my analysis. Its ability to handle notebooks, collaborate in real-time, and execute Spark jobs simplified the workflow and enhanced productivity.
 
-I utilized Google Colab for this analysis, a cloud-based platform that integrates seamlessly with PySpark and provides the computational resources required for handling large datasets. The integration of Google Colab with PySpark eliminated the need for a local Hadoop or Spark cluster, streamlining the development process. The combination of PySpark and Google Colab allowed me to focus solely on the analysis, leveraging the parallel processing capabilities of PySpark to manage the dataset efficiently.
+3. Visualization Libraries: I used Matplotlib and Seaborn for data visualization, integrated within Databricks notebooks to present the insights in an easy-to-understand format.
 
-Steps and Methodology
+Key Steps in Analysis
+1. Data Ingestion: I imported the dataset into Databricks using PySpark's capabilities to read large CSV files efficiently. The dataset was loaded into a distributed data frame for further processing.
 
-1. Data Ingestion
-The first step was loading the dataset into Google Colab. Using PySpark’s DataFrame API, I imported the dataset from GitHub and explored its structure. PySpark’s capabilities in handling large data files in various formats (CSV, JSON, etc.) made the ingestion process straightforward and efficient.
+2. Data Cleaning: This step involved handling missing values, removing duplicate entries, and ensuring consistency in data types across columns. String and numeric transformations were applied to make the data analysis-ready.
 
+3. Exploratory Data Analysis (EDA):
+Analyzed the most popular product categories during the sale.
+Examined pricing trends and the effect of discounts on sales.
+Investigated customer ratings and reviews to understand satisfaction levels.
+Studied temporal trends to identify peak sales hours and days.
 
-2. Data Cleaning and Preprocessing
-Data cleaning was an essential step, as the raw dataset contained missing values, duplicates, and inconsistencies. I utilized PySpark’s DataFrame operations to handle these issues, such as removing duplicates, filling null values, and converting data types to ensure consistency. This preprocessing step ensured the data was ready for meaningful analysis.
+4. Feature Engineering: I created new features such as discount percentage, price-to-rating ratio, and sales frequency for a deeper understanding of sales dynamics.
 
+5. Performance Optimization: Leveraging PySpark's parallel processing, I optimized operations such as joins, aggregations, and filters to ensure scalability and efficiency.
 
-3. Exploratory Data Analysis (EDA)
-Using PySpark, I conducted an in-depth exploratory data analysis to uncover patterns and trends. Key insights from this step included:
+Insights and Findings
+1. Product Trends: Certain categories, like electronics and fashion, showed higher sales volumes.
 
-Identifying the most popular product categories during the Big Billion Days sale.
+2. Discount Impact: Products with discounts between 40-60% were the most popular, suggesting an optimal discount range for customer engagement.
 
-Analyzing the average discount percentage across categories to determine which categories offered the highest savings.
+3. Customer Preferences: Highly rated products had a significant impact on customer buying decisions, with a positive correlation between ratings and sales.
 
-Studying the relationship between customer ratings and the discount percentage to understand if deeper discounts correlated with higher ratings.
+4. Temporal Trends: The first and last days of the sale witnessed a significant spike in purchases, with late-night hours showing the highest activity.
 
-
-
-4. Advanced Analysis and Visualization
-I implemented advanced data analysis techniques to derive actionable insights. For example, using PySpark’s SQL module, I queried the dataset to identify high-performing products and underperforming categories. Additionally, I created visualizations in Google Colab using Matplotlib and Seaborn to complement the analytical results. These visualizations included bar graphs, heatmaps, and scatter plots, which highlighted sales trends and customer preferences.
-
-
-5. Scalability Demonstration
-One of the key objectives was to demonstrate PySpark's scalability. By leveraging PySpark’s distributed computing capabilities, I processed the dataset significantly faster than traditional methods. This step underscored the advantages of using PySpark for large-scale data analysis tasks.
-
-
-
-Outcomes and Insights
-
-The analysis provided valuable insights into customer buying behavior during the Flipkart Big Billion Days sale. Some key takeaways included:
-
-Electronics and fashion products emerged as the top-selling categories.
-
-Products with discounts in the range of 40-60% received the highest customer ratings.
-
-A significant correlation was observed between product ratings and sales volume.
-
+Challenges and Solutions
+Large Dataset: Processing the voluminous data required efficient partitioning strategies in PySpark.
+Missing Values: Missing or inconsistent data entries were handled using PySpark's imputation and filtering techniques.
+Visualization: Rendering large-scale data visualizations was challenging but was managed by aggregating data into smaller, meaningful subsets.
 
 Conclusion
 
-This internship task was an excellent opportunity to explore PySpark’s capabilities for big data analysis. By leveraging the Flipkart Big Billion Days dataset, I demonstrated my ability to clean, process, analyze, and visualize large datasets efficiently. Using Google Colab as the development environment simplified the integration with PySpark and provided the necessary computational resources. This task not only honed my technical skills but also deepened my understanding of customer behavior and sales trends, laying a strong foundation for my career in data analysis and data science
+This task demonstrated the potential of PySpark and Databricks in analyzing large datasets effectively. By processing and analyzing the Flipkart Big Billion Days sales data, I gained valuable insights into customer behavior and sales patterns. This experience has not only strengthened my data analysis skills but also highlighted the importance of scalable tools in modern data-driven environments
+
